@@ -1,1 +1,4 @@
-# Estudos_Front-End
+ToDo:
+- [x] Intro
+- [x] HTML
+- [ ] CSS
