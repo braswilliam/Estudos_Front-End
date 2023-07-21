@@ -1,0 +1,22 @@
+.container {
+    border: 3px solid transparent;
+    display: inline-block;
+    margin-left: 60vh;
+    margin-top: 30vh;
+    background-color: hsl(180, 5%, 61%);
+    border-radius: 20px;
+}
+
+.container p {
+    text-align: center;
+    font-size: 40px;
+    padding:20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1 solid transparent;
+    border-radius: 20px;
+    color: hsl(0, 0%, 99%);
+    background-color: hsl(203, 16%, 16%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}

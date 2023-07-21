@@ -1,0 +1,14 @@
+h4 {
+
+       /*esse aqui são os comando de estilização da tag h4*/
+
+    border: 3px solid #407a7a;
+    display: inline-block;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #e97474;
+    text-align: center;
+    padding: 10px;
+    margin-left: 80vh;
+    border-radius: 10px;
+}
