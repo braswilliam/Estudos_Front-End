@@ -21,3 +21,9 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
        
 }
+
+.container {
+    background-image: url(../img/0v10gkja6fccyqrxefzjaurpl.webp);
+    background-position: center;
+    background-size: cover;
+}

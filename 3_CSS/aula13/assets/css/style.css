@@ -1,0 +1,98 @@
+.without-padding, .padding, .padding-individual, .shorthand {
+    background-color: #111;
+    color: #FFF;
+}
+
+.padding {
+    margin-top: 10px; /*será explicado*/
+    padding: 20px;
+}
+
+.padding-individual {
+    
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+.shorthand {
+    padding: 6px 12px 18px 24px;
+}
+
+.shorthand-paddin-2 {
+    background-color: #555;
+    padding: 10px 20px; /*10px cima e baixo e 20px esquerda e direita*/
+}
+
+/*paddin com width*/
+.without-border-box {
+    background-color: #444;
+    color: #FFF;
+    width: 400px;
+    padding: 50px;
+}
+
+.border-box {
+    background-color: #444;
+    color: #FFF;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.border {
+    margin-top: 10px;
+    border: 5px solid red;
+    padding: 10px;
+}
+
+.border-2 {
+    margin-top: 10px;
+    border: 5px solid rgb(255, 117, 117);
+    padding: 10px;
+}
+
+/*Borda individual*/
+.border-left {
+    border-left: 2px solid red;
+}
+
+.boder-botton {
+    border-bottom: 2px solid red;
+}
+
+.boder-right {
+    border-right: 2px solid red;
+}
+
+.border-top {
+    border-top: 2px solid red;
+}
+
+/*Borda arredondada*/
+.rounded-p {
+    border: 4px solid blue;
+    background-color: #000;
+    color: blue;
+    padding: 15px; 
+    border-radius: 15px;   
+}
+
+/*margin*/
+.margin {
+    margin: 10px;
+    background-color: #222;
+    
+}
+
+.margin-top {
+    margin-top: 50px;
+    background-color: #444;
+    padding: 10px;
+}
+
+.margin-shorthand {
+    background-color: #444;
+    margin:5px 10px 15px 20px ;
+}
