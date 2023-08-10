@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fomulário Dev</title>
+  </head>
+  <body>
+    <header>
+      <h1>Levantamento de requisitos</h1>
+    </header>
+    <main>
+      <form>
+        <div class="form-container title name-container">
+          <fieldset>
+            <label for="nome">Seu nome</label>
+            <input
+              type="text"
+              name="nome"
+              placeholder="informe o seu nome"
+              required
+            />
+          </fieldset>
+        </div>
+
+        <div class="form-container">
+          <label for="linguage" class="title">Liguagem de Programação</label>
+
+          <div class="container-options">
+            <div class="options">
+              <input type="radio" name="linguage" value="java" />
+              <label for="java">Java</label>
+            </div>
+            <div class="options">
+              <input type="radio" name="linguage" value="Python" />
+              <label for="Python">Python</label>
+            </div>
+            <div class="options">
+              <input type="radio" name="linguage" value="C#" />
+              <label for="GO">C#</label>
+            </div>
+            <div class="options">
+              <input type="radio" name="linguage" value="GO" />
+              <label for="GO">GO</label>
+            </div>
+            <div class="options">
+              <input type="radio" name="linguage" value="kotlin" />
+              <label for="kotlin">Kotlin</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-container">
+          <label for="framework" class="title">Framework do Front</label>
+
+          <div class="container-options">
+            <div class="options">
+              <input type="radio" name="framework[]" value="react" />
+              <label for="react">React</label>
+            </div>
+
+            <div class="options">
+              <input type="radio" name="framework[]" value="angular" />
+              <label for="angular">Angular</label>
+            </div>
+
+            <div class="options">
+              <input type="radio" name="framework[]" value="vue_js" />
+              <label for="vue_js">Vue.js</label>
+            </div>
+
+            <div class="options">
+              <input type="radio" name="framework[]" value="GO" />
+              <label for="GO">GO</label>
+            </div>
+
+            <div class="options">
+              <input type="radio" name="framework[]" value="svelte" />
+              <label for="svelte">Svelte</label>
+            </div>
+
+            <div class="options">
+              <input type="radio" name="framework[]" value="ember" />
+              <label for="ember">Ember.js</label>
+            </div>
+
+            <div class="options">
+              <input type="radio" name="framework[]" value="mithril" />
+              <label for="mithril">Mithril</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-container">
+          <label for="linguage" class="title"
+            >Qual a melhor opção de Banco de dados:</label
+          >
+
+          <div class="container-options">
+            <div class="options">
+              <input type="radio" name="linguage" value="MySQL" />
+              <label for="MySQL">MySQL</label>
+            </div>
+
+            <div class="options">
+              <input type="radio" name="linguage" value="PostgreSQL" />
+              <label for="PostgreSQL">PostgreSQL</label>
+            </div>
+
+            <div class="options">
+              <input type="radio" name="linguage" value="Oracle_Database" />
+              <label for="Oracle_Database">Oracle Database</label>
+            </div>
+
+            <div class="options">
+              <input
+                type="radio"
+                name="linguage"
+                value="Microsoft_SQL_Server"
+              />
+              <label for="Microsoft_SQL_Server">Microsoft SQL Server</label>
+            </div>
+
+            <div class="options">
+              <input type="radio" name="linguage" value="MongoDB" />
+              <label for="MongoDB">MongoDB</label>
+            </div>
+
+            <div class="options">
+              <input type="radio" name="linguage" value="Cassandra" />
+              <label for="Cassandra">Cassandra</label>
+            </div>
+          </div>
+
+          <div class="form-container text-area">
+            <p>Deixe aqui uma mensagem para o lider técnico</p>
+            <textarea
+              name="resumo"
+              id="resumo"
+              placeholder="mensagem"
+            ></textarea>
+          </div>
+        </div>
+
+        <input type="submit" name="send" value="Enviar" id="button" />
+      </form>
+    </main>
+  </body>
+</html>
