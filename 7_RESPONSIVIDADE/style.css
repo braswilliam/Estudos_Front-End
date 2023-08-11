@@ -9,3 +9,19 @@ h1 {
         font-size: 20px;
     }
 }
+
+/*3 - min-width*/
+
+p {
+    background-color: red;
+    color: black;
+}
+
+@media screen and (min-width: 800px) { /*Quando passar de 800px esse esquema será aplicado*/
+ p {
+    background-color: #789;
+    color: red;
+ }
+
+}
+
