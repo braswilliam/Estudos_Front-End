@@ -1,0 +1,57 @@
+.underline {
+    text-decoration: underline;
+}
+
+.line-trough {
+    text-decoration: line-through;
+}
+
+.remve-underline {
+    text-decoration: none;
+    color: red;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+.spacing {
+    letter-spacing: 5px;
+}
+
+.serif {
+    font-family: serif;
+}
+
+.sans-serif {
+    font-family: Georgia;
+}
+
+.monospace {
+    font-family: monospace;
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+.fantasy {
+    font-family: fantasy;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.obloque {
+    font-style: oblique;
+}
+
+.font-weight {
+    font-weight: bolder;
+    font-size: 25px;
+}

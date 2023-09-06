@@ -1,0 +1,17 @@
+.without-padding, .padding, .padding-individual {
+    background-color: #111;
+    color: #FFF;
+}
+
+.padding {
+    margin-top: 10px; /*será explicado*/
+    padding: 20px;
+}
+
+.padding-individual {
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}

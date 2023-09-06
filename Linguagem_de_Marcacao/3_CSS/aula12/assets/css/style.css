@@ -1,9 +1,0 @@
-.without-padding, .padding {
-    background-color: #111;
-    color: #FFF;
-}
-
-.padding {
-    margin-top: 10px; /*será explicado*/
-    padding: 20px;
-}
