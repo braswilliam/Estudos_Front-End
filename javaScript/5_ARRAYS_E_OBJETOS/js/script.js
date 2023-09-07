@@ -2,7 +2,7 @@
 
 const lista = [1, 2, 3, 4, 5];
 console.log(lista);
-console.log(typeof(lista));
+console.log(typeof (lista));
 const itens = ["will", true, 2, 4, 12, []];
 
 console.log(itens);
@@ -24,7 +24,7 @@ console.log(myName.length + " caracteres"); //pega a quantidade de caracteres
 
 //Métodos:
 
-const otherNumbers = [1,2,3];
+const otherNumbers = [1, 2, 3];
 const allNumbers = numbers.concat(otherNumbers)
 console.log()
 console.log("Seguem os número concatenados e armazenados na variável \nAllNumber: " + allNumbers)
@@ -42,7 +42,7 @@ const person = {
 
 console.log(person.name);
 console.log(person.name.length);
-console.log(typeof(person));
+console.log(typeof (person));
 
 
 // 6 - Criando e deletando:
@@ -83,7 +83,7 @@ Object.assign(obj2, obj); //Podemos copiar as propriedades de um objeto para out
 console.log(obj2);
 obj2.a = "testado";
 console.log(obj2);
-obj2.c.push("Banana"); 
+obj2.c.push("Banana");
 console.log(obj2);
 
 
@@ -115,12 +115,12 @@ console.log(b)
 
 const users = ["Matheus", "João", "Pedro", "Miguel"];
 
-for(let i = 0; i < users.length; i++){
+for (let i = 0; i < users.length; i++) {
     console.log(`Listando Usuário: ${users[i]}`);
 }
 
 // 11 - push e pop:
-const arrays = ["a", "b","c"];
+const arrays = ["a", "b", "c"];
 arrays.push("d")
 console.log(arrays);
 console.log(arrays.length);
@@ -153,10 +153,166 @@ console.log(myElements[myElements.indexOf("Abacate")]); //pega a primeira posiç
 console.log(myElements.lastIndexOf("Abacate")); //último elemento do tipo na posição;
 
 
-// 24 - slice
+// 14 - slice:
 const testeSlice = ["a", "b", "c", "d", "e", "f"];
 const subArray = testeSlice.slice(2, 4 + 1) //não modifica o array original
 console.log(subArray);
+
+// 15 - foreach:
+
+const nums = [1, 2, 3, 4, 5];
+
+nums.forEach((num) => {
+    console.log(`O numero é ${num}`);
+})
+
+const posts = [
+    { title: "Primeiro post", category: "PHP" },
+    { title: "Segundo post", category: "JavaScript" },
+    { title: "Terceiro post", category: "Python" },
+];
+
+posts.forEach((post) => {
+    console.log(`O post: ${post.title}, e a categoria: ${post.category}`);
+});
+
+// 16 - includes:
+
+const brands = ["BMW", "Fusca", "Ferrari", "Fiat"];
+console.log(brands.includes("Fiat"));
+console.log(brands.includes("KIA"));
+
+if (brands.includes("BMW")) {
+    console.log("Temos carros da marca BMW.");
+}
+
+// 17 - reverse:
+
+const reverseTeste = [1, 2, 3, 4, 5];
+reverseTeste.reverse();
+console.log(reverseTeste);
+
+
+// 18 - trim:
+
+const trimteste = "  testando  \n   ";
+console.log(trimteste);
+console.log(trimteste.trim());
+
+console.log(trimteste.length)
+console.log(trimteste.trim().length);
+
+
+// 19 - padstart:
+const testePadStart = "1";
+const newNumber = testePadStart.padStart(4, "0"); //completa com 0 até chagar 4 dígitos ex: 0001
+console.log(newNumber);
+
+const testePadEnd = newNumber.padEnd(10, "0");
+console.log(testePadEnd);
+
+// 20 - split:
+const frase = "O rato roeu a roupa do rei de Roma";
+const arrayDaFrase = frase.split(" ");
+console.log(arrayDaFrase);
+
+console.log()
+
+
+// 21 - join:
+
+const fraseDenovo = arrayDaFrase.join(" ");
+console.log(fraseDenovo);
+
+const itensParaComprar = ["Mouse", "Teclado", "Monitor"];
+const fraseDeCompra = `Precisamos comprar: ${itensParaComprar.join(", ")}`;
+console.log(fraseDeCompra);
+
+// 22 - repeat:
+const palavra = "testando ";
+console.log(palavra.repeat(4));
+
+
+// 23 - rest operator:
+
+const somaInfinita = (...args) => {
+    let total = 0;
+
+    for (let i = 0; i < args.length; i++) {
+        total += args[i];
+    }
+    return total
+}
+
+console.log(somaInfinita(1, 2, 3));
+console.log(somaInfinita(1, 2, 3, 4, 5, 6, 10, 100, 200, 1000, 900, 21002));
+
+// 24 - for of:
+const somaInfinita2 = (...args) => {
+    let total = 0;
+
+    for (const iterator of args) {
+        total += iterator;
+    }
+
+    return total;
+}
+
+console.log(somaInfinita2(1, 2, 3, 4));
+console.log(somaInfinita2(10, 20, 100, 1000, 1000200, 150));
+
+// 25 - destructuring:
+
+const userDetails = {
+    firstName: "Will",
+    lastName: "Brasil",
+    job: "Programador"
+};
+
+
+const { firstName, lastName, job } = userDetails;
+
+console.log(firstName, lastName, job);
+
+//renomer as variáveis:
+const { firstName: primeiroNome } = userDetails;
+console.log(firstName);
+
+
+// 26 destructuring em arrays:
+
+const minhaLista = ["Avião", "Submarino", "Carro"];
+
+const [veiculoA, veiculoB, veiculoC] = minhaLista;
+console.log(minhaLista);
+
+// 27 - JSON
+
+const myJson = '{"nome": "William", "age": "37", "skills": ["PHP", "JavaScript", "Java", "Python"]}';
+
+console.log(typeof (myJson));
+
+// 28 - json para objeto e obj para JSON:
+
+const myObject = JSON.parse(myJson);
+console.log(myObject);
+console.log(myObject.nome);
+console.log(typeof (myObject));
+console.log(...myObject.skills);
+
+
+// json invalido = vai dar erro!
+
+//const badJason = '{name: Will, "age": 31}';
+//const myBadObject = JSON.parse(badJason);
+
+
+myObject.isOpenToWork = true;
+console.log(myObject);
+
+const myNewJson = JSON.stringify(myObject);
+console.log(myNewJson);
+console.log(typeof(myNewJson));
 
 
 
